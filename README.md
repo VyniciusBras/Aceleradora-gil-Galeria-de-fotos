@@ -16,3 +16,5 @@ Exemplos do site:
 ![Inicio do trabalho](https://github.com/user-attachments/assets/c03f25af-c325-4c3e-a56e-2467ce55abc4)
 ![Foto aberta](https://github.com/user-attachments/assets/2084b63e-4812-4678-b8aa-14a0b09dfb85)
 
+
+OBS: Caso for abrir no VSCODE, instalar a extensão Live Server.
