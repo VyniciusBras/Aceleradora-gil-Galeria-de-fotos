@@ -1,0 +1,161 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    width: 100%;
+    padding: 20px;
+    background-color: #00b7ff;
+    color: rgb(0, 0, 0);
+    text-align: center;
+}
+
+.search-bar {
+    position: sticky;
+    text-align: center;
+    top: 0;
+    z-index: 1000;
+    background-color: rgba(0, 0, 0, 0.219);
+    padding: 1px 0;
+    width: 102%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.search-bar input {
+    padding: 10px;
+    width: 300px;
+    border: 2px solid #00000077;
+    border-radius: 10px;
+    margin-right: 2px;
+}
+
+.search-bar button {
+    padding: 10px 10px;
+    border: none;
+    background-color: #0000006c;
+    color: rgb(255, 255, 255);
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.search-bar button:hover {
+    background-color: #333;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 30px;
+    width: 80%;
+    margin: 30px 0;
+}
+
+.gallery-item {
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+    border-radius: 15px;
+}
+
+.gallery-item img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.gallery-item:hover {
+    transform: scale(1.03);
+    box-shadow: 0 10px 40px #00b7ff;
+}
+
+.gallery-item .keywords {
+    display: none;
+    position: absolute;
+}
+
+.gallery-item .photo-name {
+    margin-top: 5px;
+    font-size: 20px;
+    color: #000000;
+    font-weight: bold;
+}
+
+.no-results {
+    display: none;
+    text-align: center;
+    font-size: 18px;
+    color: #000000;
+    margin: 50px 0;
+}
+
+footer {
+    width: 100%;
+    padding: 10px;
+    background-color: #27272769;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    margin-top: auto;
+}
+
+.page-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.content-wrapper {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+    z-index: 1001;
+}
+
+.modal.active {
+    display: flex;
+}
+
+.modal img {
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 10px;
+}
+
+.modal:target {
+    display: flex;
+}
+
+.close-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: rgb(255, 255, 255);
+    border: none;
+    padding: 10px 15px;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.close-btn:hover {
+    background-color: #ccc;
+}
